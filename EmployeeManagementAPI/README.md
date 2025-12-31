@@ -1,11 +1,10 @@
-
-First thing - you need SQL Server installed connection string is in `appsettings.json` to match your setup:
+SQL Server connection string `appsettings.json`  setup:
 
 ```json
 "Server=localhost\\SQLEXPRESS;Database=EmployeeManagementDB;Trusted_Connection=True;..."
 ```
 
-After that run the EF migrations to create the database:
+After EF migrations to create the database:
 ```bash
 dotnet ef database update
 ```
